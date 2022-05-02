@@ -1,0 +1,398 @@
+[
+    {
+      "img": "/file/Elden-Ring/merchant-kale-npc-elden-ring-wiki-guide.jpg",
+      "name": "Merchant Kale\\u0301",
+      "Location": "Limgrave: Church of Elleh",
+      "Role": " General Goods Shop",
+      "Voiced By": " Nabil Elouahabi"
+    },
+    {
+      "img": "/file/Elden-Ring/sorceress-sellen-npc-photo-elden-ring-wiki-guide-300px-min.jpg",
+      "name": "Sorceress Sellen",
+      "Location": "Limgrave, Waypoint Ruins",
+      "Role": "Sorceries Shop",
+      "Voiced By": " Kezia Burrows"
+    },
+    {
+      "img": "/file/Elden-Ring/blacksmith_hewg_elden_ring_wiki_guide_300px.jpg",
+      "name": "Smithing Master Hewg",
+      "Location": "Roundtable Hold",
+      "Role": "Blacksmith",
+      "Voiced by": "James Doherty"
+    },
+    {
+      "img": "/file/Elden-Ring/woman_with_a_red_hood_npc_elden_ring_wiki_guide_300px.jpg",
+      "name": "Roderika",
+      "Location": "Stormhill ShackRoundtable Hold",
+      "Role": "Spirit-Tuner",
+      "Voiced by": "Helen Monks"
+    },
+    {
+      "img": "/file/Elden-Ring/enia-npc-elden-ring-wiki-guide.jpg",
+      "name": "Enia",
+      "Location": "Roundtable Hold",
+      "Role": "Finger Reader",
+      "Voiced by": "Souad Faress"
+    },
+    {
+      "img": "/file/Elden-Ring/thops_npc_elden_ring_wiki_guide_300px.jpg",
+      "name": "Thops",
+      "Location": "Church of Irith in Liurnia of the Lakes",
+      "Role": "Sorcery Student",
+      "Voiced by": "Mathew Morgan"
+    },
+    {
+      "img": "/file/Elden-Ring/mirel_pastor_of_vow.jpg",
+      "name": "Miriel, Pastor of Vows",
+      "Location": "Church of Vows",
+      "Role": "Steward of the Church of Vows",
+      "Voiced by": "Mathew Marsh"
+    },
+    {
+      "img": "/file/Elden-Ring/smithing-master-iji-npc-elden-ring-wiki-guide.jpg",
+      "name": "War Counselor Iji",
+      "Location": "Kingsrealm Ruins, Western Liurnia of the Lakes",
+      "Role": "Blacksmith & Quest NPC",
+      "Voiced by": " Aneirin Hughes"
+    },
+    {
+      "img": "/file/Elden-Ring/rogier_elden_ring_wiki_guide_300px.jpg",
+      "name": "Sorcerer Rogier",
+      "Location": " Stormveil Castle Roundtable Hold ",
+      "Role": "Merchant",
+      "Voiced by": "Ben Norris"
+    },
+    {
+      "img": "/file/Elden-Ring/boc_npcs_elden_ring_wiki_guide_300px.jpg",
+      "name": "Boc the Seamster",
+      "Location": "Limgrave",
+      "Role": "Garments Adjuster",
+      "Voiced by": "Calvin A. Dean"
+    },
+    {
+      "img": "/file/Elden-Ring/d-hunter-of-the-dead-npc-elden-ring-wiki-guide.jpg",
+      "name": "D, Hunter of the Dead",
+      "Location": "Roundtable Hold",
+      "Role": "Undead Hunter",
+      "Voiced by": "Huw Parmenter"
+    },
+    {
+      "img": "/file/Elden-Ring/brother_corhyn_npcs_elden_ring_wiki_guide.jpg",
+      "name": "Brother Corhyn",
+      "Location": "Roundtable Hold",
+      "Role": "Holy Practitioner",
+      "Voiced by": "Samuel Barnett"
+    },
+    {
+      "img": "/file/Elden-Ring/gurranqbeast.jpg",
+      "name": "Gurranq, Beast Clergyman",
+      "Location": "Bestial Sanctum, Caelid",
+      "Role": "Special Trader",
+      "Voiced by": "Jonathan Keeble"
+    },
+    {
+      "img": "/file/Elden-Ring/knight_bernahl_npcs_elden_ring_wiki_guide.jpg",
+      "name": "Knight Bernahl",
+      "Location": "Warmaster's ShackVolcano Manor",
+      "Role": "Ash of War Merchant",
+      "Voiced by": "Fergus O'Donnell"
+    },
+    {
+      "img": "/file/Elden-Ring/pidia_carian_servant_elden_ring_wiki_guide_300px.jpg",
+      "name": "Pidia, Carian Servant",
+      "Location": "Caria Manor",
+      "Role": "Merchant",
+      "Voiced by": "-"
+    },
+    {
+      "img": "/file/Elden-Ring/rennala-queen-of-the-moon-raya-lucaria-academy-walkthrough-elden-ring-wiki-guide-600px-min.jpg",
+      "name": "Rennala, Queen of the Full Moon",
+      "Location": "Academy of Raya Lucaria",
+      "Role": "Last Carian Queen",
+      "Voiced by": " Mali Harries"
+    },
+    {
+      "img": "/file/Elden-Ring/elden_ring_artwork_elden_ring_wiki_guide_1_300px.jpg",
+      "name": "Melina",
+      "Location": "The beginning of the Tarnished's journey.",
+      "Role": "Maiden",
+      "Voiced by": "Martha Mackintosh"
+    },
+    {
+      "img": "/file/Elden-Ring/alexander_npc_elden_ring_wiki_guide_300px.jpg",
+      "name": "Iron Fist Alexander",
+      "Voiced by": "Kevin Howarth"
+    },
+    {
+      "img": "/file/Elden-Ring/bloody-finger-hunter-yura-npc-elden-ring-wiki-guide.jpg",
+      "name": "Bloody Finger Hunter Yura",
+      "Location": " Limgrave: near Seaside Ruins Liurnia of the Lakes: Near Raya Lucaria Academy entrance. Altus Plateau: Second Church of Marika ",
+      "Role": "Quest NPC and Summonable Cooperator",
+      "Voiced by": "Shaun Dooley"
+    },
+    {
+      "img": "/file/Elden-Ring/white-faced-varre-npc-elden-ring-wiki-guide.jpg",
+      "name": "White Mask Varre\\u0301",
+      "Location": "Various Locations",
+      "Role": "Player Guidance",
+      "Voiced by": "Pip Torrens"
+    },
+    {
+      "img": "/file/Elden-Ring/the-snow-witch-npc-infobox-elden-ring-wiki-guide-300px.jpg",
+      "name": "Renna",
+      "Location": "Limgrave",
+      "Role": "The Storyteller",
+      "Voiced by": " Aimee-Ffion Edwards "
+    },
+    {
+      "img": "/file/Elden-Ring/fia-npc-elden-ring-wiki-300px2-min.jpeg",
+      "name": "Fia",
+      "Location": "Roundtable Hold",
+      "Role": "Deathbed Companion",
+      "Voiced by": "Chiara Goldsmith"
+    },
+    {
+      "img": "/file/Elden-Ring/edgar-npcs-elden-ring-wiki-guide.jpg",
+      "name": "Edgar",
+      "Location": "Castle Morne, Weeping Peninsula",
+      "Role": "Morne Castellan",
+      "Voiced by": "Richard Hainsworth"
+    },
+    {
+      "img": "/file/Elden-Ring/irina_npcs_elden_ring_wiki_guide.jpg",
+      "name": "Irina",
+      "Location": "Bridge of Sacrifice, Weeping Peninsula",
+      "Role": "Citizen in need of help.",
+      "Voiced by": "Clare Corbett"
+    },
+    {
+      "img": "/file/Elden-Ring/kenneth_haight_npcs_elden_ring_wiki_300px.jpg",
+      "name": "Kenneth Haight",
+      "Location": "Limgrave",
+      "Role": "Next Rightful Ruler of Limgrave",
+      "Voiced by": "William Gaminara"
+    },
+    {
+      "img": "/file/Elden-Ring/queen-marika-lore-npc-elden-ring-wiki-300px.jpeg",
+      "name": "Queen Marika",
+      "Location": "N/A",
+      "Role": "Ruler of The Lands Between",
+      "Voiced by": "N/A"
+    },
+    {
+      "img": "/file/Elden-Ring/diallos-npc-elden-ring-wiki-300px-min.jpeg",
+      "name": "Knight Diallos",
+      "Location": "Roundtable Hold",
+      "Role": "Quest NPC",
+      "Voiced by": "Peter Caulfield"
+    },
+    {
+      "img": "/file/Elden-Ring/twin_maiden_husks_npcs_elden_ring_wiki_300px.jpg",
+      "name": "Twin Maiden Husks",
+      "Location": "Roundtable Hold",
+      "Role": "Merchant",
+      "Voiced by": "n/a"
+    },
+    {
+      "img": "/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg",
+      "name": "Patches",
+      "Location": "Murkwater Cave",
+      "Drops": "",
+      "table": "",
+      "HP": "\\u2248 1500 (Field Boss)",
+      "Strong VS": "Weak to\n\n??\n "
+    },
+    {
+      "img": "/file/Elden-Ring/ghost_1_npcs_elden_ring_wiki_300px.jpg",
+      "name": "Frustrated Spirit",
+      "Location": "Northernmost part of Limgrave",
+      "Role": "Benevolent"
+    },
+    {
+      "img": "/file/Elden-Ring/gidron-ofnir-roundtable-hold-npc-elden-ring-wiki-300px2-min.jpeg",
+      "name": "Gideon Ofnir",
+      "Location": "Roundtable Hold",
+      "Role": "The All-Knowing",
+      "Voiced by": "Joe McGann"
+    },
+    {
+      "img": "/file/Elden-Ring/nepheli-loux-npc-elden-ring-wiki-guide.jpg",
+      "name": "Nepheli Loux, Warrior",
+      "Location": "Stormveil Castle",
+      "Role": "Quest NPC and Summon",
+      "Voiced by": "Cara Theobold"
+    },
+    {
+      "img": "/file/Elden-Ring/hyetta_2_fix_npcs_elden_ring_wiki_300px.jpg",
+      "name": "Hyetta",
+      "Location": " Liurnia of the Lakes Subterranean Shunning-Grounds ",
+      "Role": "Quest NPC",
+      "Voiced by": "Clare Corbett"
+    },
+    {
+      "img": "/file/Elden-Ring/palm_reader_elden_ring_wiki_guide_300px.jpg",
+      "name": "Finger Reader Crones",
+      "Location": "In almost every region in the Lands Between",
+      "Role": "NPCs",
+      "Voiced by": " ???"
+    },
+    {
+      "img": "/file/Elden-Ring/tanith_npc_elden_ring_wiki_guide_300x.jpg",
+      "name": "Tanith",
+      "Location": "Volcano Manor",
+      "Role": "Head of Volcano Manor",
+      "Voiced by": " Gemma Whelan"
+    },
+    {
+      "img": "/file/Elden-Ring/rya_npcs_elden_ring_wiki_guide_300px.jpg",
+      "name": "Rya",
+      "Location": "Volcano Manor",
+      "Role": "Scout",
+      "Voiced by": "Ellie Heydon"
+    },
+    {
+      "img": "/file/Elden-Ring/dung_eater_npcs_elden_ring_wiki_guide_300px.jpg",
+      "name": "Dung Eater",
+      "Location": " Roundtable Hold Subterannean Shunning-Grounds ",
+      "Role": "Quest NPC, Invader, and Summon",
+      "Voiced by": " Jim Johnson"
+    },
+    {
+      "img": "/file/Elden-Ring/gostoc.jpg",
+      "name": "Gatekeeper Gostoc",
+      "Location": "Stormveil Castle Entrance",
+      "Role": "NPC and Merchant",
+      "Voiced by": "Ben Fox"
+    },
+    {
+      "img": "/file/Elden-Ring/fmlgngpvcacmvf4.jpg",
+      "name": "Ranni the Witch",
+      "Location": "Ranni's Rise, Three Sisters",
+      "Role": "Main NPC - Affects Endings",
+      "Voiced by": "Aimee-Ffion Edwards"
+    },
+    {
+      "img": "/file/Elden-Ring/seluvis_npcs_elden_ring_wiki_guide.jpg",
+      "name": "Preceptor Seluvis",
+      "Location": "Seluvis's Rise, Three Sisters",
+      "Role": "Preceptor of Sorcerous Arts (Quest NPC)",
+      "Voiced by": "Charles Dale"
+    },
+    {
+      "img": "/file/Elden-Ring/primeval_sorcerer_azur_npcs_elden_ring_wiki_guide.jpg",
+      "name": "Primeval Sorcerer Azur",
+      "Location": "Hermit Village, Mt. Gelmir",
+      "Drops": " Azur's Glintstone Set "
+    },
+    {
+      "img": "/file/Elden-Ring/blaidd-wolfman-location2-npc-elden-ring-wiki-300px-min.jpeg",
+      "name": "Blaidd the Half-Wolf",
+      "Locations": " Mistwood Ruins Forlorn Hound Evergaol Siofra River Redmane Castle Three Sisters ",
+      "Role": "Quest NPC and summon",
+      "Voiced by": " Scott Arthur"
+    },
+    {
+      "img": "/file/Elden-Ring/gowry-location-npc-elden-ring-wiki-300px-min-min.jpeg",
+      "name": "Gowry",
+      "Location": "Gowry's Shack, Caelid",
+      "Role": "Elder Sage",
+      "Voiced by": "Stephen Boxer"
+    },
+    {
+      "img": "/file/Elden-Ring/millicent-npc-elden-ring-wiki-300px-min-min-min.jpeg",
+      "name": "Millicent",
+      "Location": "Church of the Plague",
+      "Role": "Quest NPC and Summonable Cooperator",
+      "Voiced by": "Anjli Mohindra"
+    },
+    {
+      "img": "/file/Elden-Ring/great-jar.png",
+      "name": "The Great-Jar",
+      "Location": "Caelid",
+      "Role": "NPC",
+      "Voiced by": "N/A"
+    },
+    {
+      "img": "/file/Elden-Ring/latenna-npc-elden-ring-wiki-guide.jpg",
+      "name": "Latenna",
+      "Location": "Liurnia of the Lakes, Slumbering Wolf's Shack",
+      "Role": "Quest NPC",
+      "Voiced by": "Jennifer English"
+    },
+    {
+      "img": "/file/Elden-Ring/albus-npc-elden-ring-wiki-guide.jpg",
+      "name": "Albus",
+      "Location": "Village of the Albinaurics, Liurnia of the Lakes",
+      "Role": "Gives Key Item",
+      "Voiced by": "Martyn Ellis"
+    },
+    {
+      "img": "/file/Elden-Ring/ensha.png",
+      "name": "Ensha of the Royal Remains",
+      "Location": "Roundtable Hold",
+      "Drops": "Clinging BoneRoyal Remains Set",
+      "Role": "NPC Invader"
+    },
+    {
+      "img": "/file/Elden-Ring/shabriri_npc_mountaintops_of_the_giants_elden_ring_wiki_guide.jpg",
+      "name": "Shabriri",
+      "Location": "Mountaintops of the Giants",
+      "Role": "NPC and Summonable Cooperator",
+      "Voiced by": "Shaun Dooley"
+    },
+    {
+      "img": "/file/Elden-Ring/witch-hunter-jerren-npcs-elden-ring-wiki-300px-min.jpeg",
+      "name": "Witch-Hunter Jerren",
+      "Location": "Redmane Castle",
+      "Role": "Witch-Hunter",
+      "Voiced by": " ???"
+    },
+    {
+      "img": "/file/Elden-Ring/blackguard.jpg",
+      "name": "Blackguard Big Boggart",
+      "Location": "Boilprawn Shack",
+      "Role": "Blackguard",
+      "Voiced by": "Dean Fagan"
+    },
+    {
+      "img": "/file/Elden-Ring/goldmask_npcs_elden_ring_wiki_guide300px.jpg",
+      "name": "Goldmask",
+      "Location": " Altus Plateau ",
+      "Role": "Unknown",
+      "Voiced by": "..."
+    },
+    {
+      "img": "/file/Elden-Ring/d_twin_brother_npcs_elden_ring_wiki_guide_300px.jpg",
+      "name": "D, Beholder of Death",
+      "Location": "Nokron, Eternal City",
+      "Role": "Other",
+      "Voiced by": " ???"
+    },
+    {
+      "img": "/file/Elden-Ring/three_fingerssmall.jpg",
+      "name": "Three Fingers",
+      "Location": "Cathedral of the Forsaken",
+      "Role": " ",
+      "Voiced by": " N/A"
+    },
+    {
+      "img": "/file/Elden-Ring/20220315163048_1.jpg",
+      "name": "Master Lusat",
+      "Location": "Sellia Hideaway",
+      "Drops": "Lusat's Set"
+    },
+    {
+      "img": "/file/Elden-Ring/image_2022-03-17_071433.png",
+      "name": "Jar Bairn",
+      "Location": "Jarburg, Liurnia of the Lakes",
+      "Role": "Quest NPC",
+      "Voiced by": "Grace Saif"
+    },
+    {
+      "img": "/file/Elden-Ring/lionel-lionhearted-npc-elden-ring-wiki-guide-300px-min.jpeg",
+      "name": "Lionel the Lionhearted",
+      "Location": "Deeproot Depths",
+      "Role": "Knight",
+      "Voiced by": " ???"
+    }
+  ]
