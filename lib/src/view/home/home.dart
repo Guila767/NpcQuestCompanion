@@ -1,5 +1,5 @@
-import 'package:elden_ring_quest_guide/src/drawer/my_drawer.dart';
 import 'package:elden_ring_quest_guide/src/view/settings/settings_view.dart';
+import 'package:elden_ring_quest_guide/src/widgets/drawer/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {

@@ -1,9 +1,8 @@
-import 'package:elden_ring_quest_guide/src/app_assets.dart';
-import 'package:elden_ring_quest_guide/src/drawer/my_drawer.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:elden_ring_quest_guide/src/view/npc_list/npc_list_view_appbar.dart';
 import 'package:elden_ring_quest_guide/src/view/npc_list/npn_list_view_controller.dart';
+import 'package:elden_ring_quest_guide/src/widgets/drawer/my_drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 import 'npc_details_view.dart';
 
@@ -60,9 +59,13 @@ class _NpcListViewState extends State<NpcListView> {
               var npc = widget.controller.npcs[index];
               return ListTile(
                 title: Text(npc.name),
-                leading: CircleAvatar(
-                  // Display the Flutter Logo image asset.
-                  foregroundImage: NetworkImage('https://eldenring.wiki.fextralife.com${npc.img}'),
+                leading: CachedNetworkImage(
+                  height: 40, width: 40,
+                  placeholder: (ctx, _) => const CircularProgressIndicator(),
+                  imageUrl: 'https://eldenring.wiki.fextralife.com${npc.img}',
+                  imageBuilder: (ctx, imgProvider) => CircleAvatar(
+                    foregroundImage: imgProvider,
+                  )
                 ),
                 onTap: () {
                   // Navigate to the details page. If the user leaves and returns to
