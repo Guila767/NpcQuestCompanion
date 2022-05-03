@@ -3,6 +3,7 @@ import 'package:elden_ring_quest_guide/src/app_colors.dart';
 import 'package:elden_ring_quest_guide/src/local_repositories/local_repository.dart';
 import 'package:elden_ring_quest_guide/src/model/npc_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:injector/injector.dart';
 
 import '../../widgets/elden_ring_themed/elden_ring_box_border.dart';
@@ -26,65 +27,72 @@ class NpcDetailsView extends StatelessWidget {
       appBar: AppBar(
         title: Text(npc.name),
       ),
-      body: Column(
-        children: [
-          const SizedBox(height: 20),
-          CachedNetworkImage(
-            imageUrl: 'https://eldenring.wiki.fextralife.com${npc.img}',
-            imageBuilder: (ctx, imgProvider) => Container(
-              width: 120, height: 120,
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(10.0)),
-                image: DecorationImage(image: imgProvider, fit: BoxFit.cover),
-                border: EldenRingBoxBorder()
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            CachedNetworkImage(
+              imageUrl: 'https://eldenring.wiki.fextralife.com${npc.infoTable.img}',
+              imageBuilder: (ctx, imgProvider) => Container(
+                width: 120, height: 120,
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                  image: DecorationImage(image: imgProvider, fit: BoxFit.cover),
+                  border: EldenRingBoxBorder()
+                )
+              ),
+            ),
+            const Divider(color: AppColors.baseColor,height: 20, thickness: 2.0),
+            Padding(
+              padding: EdgeInsets.only(left: scrSize.width * 0.1, right: scrSize.width * 0.1),
+              child: Table(
+                defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                border: TableBorder.all(
+                  borderRadius: const BorderRadius.all(Radius.circular(6.0)),
+                  color: AppColors.baseColor
+                ),
+                children: [
+                  // TODO: Use localization for the text
+                  TableRow(children: [
+                    const Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text('Name'),
+                    ), 
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4.0),
+                      child: Text(npc.name),
+                    )
+                  ]),
+                  TableRow(children: [ 
+                    const Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text('Location'),
+                    ), 
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text(npc.infoTable.location ?? 'Unknown'),
+                    )
+                  ]),
+                  TableRow(children: [
+                    const Padding(
+                      padding: EdgeInsets.all(4.0),
+                      child: Text('Role'),
+                    ), 
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Text(npc.infoTable.location ?? 'Unknown'),
+                    )
+                  ])
+                ],
               )
             ),
-          ),
-          const Divider(color: AppColors.baseColor,height: 20, thickness: 2.0),
-          Padding(
-            padding: EdgeInsets.only(left: scrSize.width * 0.1, right: scrSize.width * 0.1),
-            child: Table(
-              defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-              border: TableBorder.all(
-                borderRadius: const BorderRadius.all(Radius.circular(6.0)),
-                color: AppColors.baseColor
-              ),
-              children: [
-                // TODO: Use localization for the text
-                TableRow(children: [
-                  const Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text('Name'),
-                  ), 
-                  Padding(
-                    padding: const EdgeInsets.only(left: 4.0),
-                    child: Text(npc.name),
-                  )
-                ]),
-                TableRow(children: [ 
-                  const Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text('Location'),
-                  ), 
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Text(npc.location ?? 'Unknown'),
-                  )
-                ]),
-                TableRow(children: [
-                  const Padding(
-                    padding: EdgeInsets.all(4.0),
-                    child: Text('Role'),
-                  ), 
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Text(npc.role ?? 'Unknown'),
-                  )
-                ])
-              ]
+            const SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MarkdownBody(data: npc.mainContent),
             )
-          ),
-        ],
+          ],
+        ),
       )
     );
   }

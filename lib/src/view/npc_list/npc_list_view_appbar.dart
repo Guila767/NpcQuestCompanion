@@ -1,6 +1,6 @@
 import 'package:elden_ring_quest_guide/src/app_assets.dart';
 import 'package:elden_ring_quest_guide/src/app_colors.dart';
-import 'package:elden_ring_quest_guide/src/view/npc_list/inputbar.dart';
+import 'package:elden_ring_quest_guide/src/widgets/inputbar/inputbar.dart';
 import 'package:flutter/material.dart';
 
 class NpcListViewAppbar extends StatefulWidget implements PreferredSizeWidget {
