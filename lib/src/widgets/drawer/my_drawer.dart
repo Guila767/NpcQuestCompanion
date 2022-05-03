@@ -1,9 +1,9 @@
+import 'package:elden_ring_quest_guide/src/app_assets.dart';
+import 'package:elden_ring_quest_guide/src/app_colors.dart';
 import 'package:elden_ring_quest_guide/src/view/home/home.dart';
 import 'package:elden_ring_quest_guide/src/view/npc_list/npc_list_view.dart';
 import 'package:flutter/material.dart';
 
-import '../app_colors.dart';
-import '../app_assets.dart';
 import 'drawer_tile.dart';
 
 class MyDrawer extends StatelessWidget {
