@@ -108,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                                     elevation: 4.0,
                                     fillColor: Theme.of(context).primaryColor,
                                     child: const Icon(
-                                      FontAwesomeIcons.twitter,
+                                      FontAwesomeIcons.github,
                                       size: 16.0,
                                     ),
                                     padding: const EdgeInsets.all(15.0),
@@ -141,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                                   ),
                                   Padding(
                                     padding: EdgeInsets.only(
-                                        top: 8.0,
+                                        top: 16.0,
                                         left: 8.0,
                                         right: 8.0,
                                         bottom: 0),

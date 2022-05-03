@@ -1,8 +1,10 @@
+import 'package:elden_ring_quest_guide/src/application_state.dart';
 import 'package:elden_ring_quest_guide/src/local_repositories/local_repository.dart';
 import 'package:elden_ring_quest_guide/src/view/settings/settings_controller.dart';
 import 'package:elden_ring_quest_guide/src/view/settings/settings_service.dart';
 import 'package:flutter/material.dart';
 import 'package:injector/injector.dart';
+import 'package:provider/provider.dart';
 import 'src/app.dart';
 
 void main() async {
@@ -20,7 +22,10 @@ void main() async {
   // Run the app and pass in the SettingsController. The app listens to the
   // SettingsController for changes, then passes it further down to the
   // SettingsView.
-  runApp(MyApp(settingsController: settingsController));
+  runApp(ChangeNotifierProvider(
+    create: (ctx) => ApplicationState(),
+    builder: (ctx, _)  => MyApp(settingsController: settingsController)
+  ));
 }
 
 void initilizeInjector(Injector injector) {

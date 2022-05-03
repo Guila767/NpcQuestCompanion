@@ -1,4 +1,5 @@
 import 'package:elden_ring_quest_guide/src/view/home/home.dart';
+import 'package:elden_ring_quest_guide/src/widgets/router/router.dart' as app;
 import 'package:elden_ring_quest_guide/src/view/npc_list/npc_details_view.dart';
 import 'package:elden_ring_quest_guide/src/view/npc_list/npc_list_view.dart';
 import 'package:elden_ring_quest_guide/src/view/settings/settings_controller.dart';
@@ -59,11 +60,13 @@ class MyApp extends StatelessWidget {
           // Define a light and dark color theme. Then, read the user's
           // preferred ThemeMode (light, dark, or system default) from the
           // SettingsController to display the correct theme.
-          theme: ThemeData(),
+          theme: ThemeData(appBarTheme: const AppBarTheme(
+            color: Colors.black12
+          )),
           darkTheme: ThemeData.dark(),
           themeMode: settingsController.themeMode,
 
-          initialRoute: Home.routName,
+          //initialRoute: Home.routName,
           // Define a function to handle named routes in order to support
           // Flutter web url navigation and deep linking.
           onGenerateRoute: (RouteSettings routeSettings) {
@@ -78,8 +81,9 @@ class MyApp extends StatelessWidget {
                   case NpcDetailsView.routeName:
                     return NpcDetailsView();
                   case Home.routName:
-                  default:
                     return const Home();
+                  default:
+                    return const app.Router();
                 }
               },
             );
