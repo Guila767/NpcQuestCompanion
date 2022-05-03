@@ -62,7 +62,7 @@ class _NpcListViewState extends State<NpcListView> {
                 leading: CachedNetworkImage(
                   height: 40, width: 40,
                   placeholder: (ctx, _) => const CircularProgressIndicator(),
-                  imageUrl: 'https://eldenring.wiki.fextralife.com${npc.img}',
+                  imageUrl: 'https://eldenring.wiki.fextralife.com${npc.infoTable.img}',
                   imageBuilder: (ctx, imgProvider) => CircleAvatar(
                     foregroundImage: imgProvider,
                   )
