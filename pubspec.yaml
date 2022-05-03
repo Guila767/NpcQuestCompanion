@@ -10,11 +10,13 @@ environment:
   sdk: ">=2.17.0-182.2.beta <3.0.0"
 
 dependencies:
+  cached_network_image: ^3.2.0
   equatable: ^2.0.3
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_markdown: ^0.6.10
   injector: ^2.0.0
   json_annotation: ^4.5.0
   json_serializable: ^6.2.0
