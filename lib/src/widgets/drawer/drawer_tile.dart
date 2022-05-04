@@ -1,4 +1,5 @@
 import 'package:elden_ring_quest_guide/src/app_colors.dart';
+import 'package:elden_ring_quest_guide/src/widgets/elden_ring_themed/elden_ring_box_border.dart';
 import 'package:flutter/material.dart';
 
 class DrawerTile extends StatelessWidget {
@@ -22,9 +23,10 @@ class DrawerTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-          margin: const EdgeInsets.only(top: 6),
+          margin: const EdgeInsets.only(top: 16),
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
+              border: EldenRingBoxBorder(),
               boxShadow: [
                 BoxShadow(
                     color: isSelected
@@ -42,7 +44,7 @@ class DrawerTile extends StatelessWidget {
                 icon,
                 size: 18,
                 color: isSelected
-                    ? AppColors.orange500
+                    ? AppColors.baseColor
                     : Colors.white.withOpacity(0.6),
               ),
               Padding(
@@ -54,7 +56,7 @@ class DrawerTile extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.w200,
                     color: isSelected
-                        ? AppColors.orange500
+                        ? AppColors.baseColor
                         : Colors.white.withOpacity(0.8),
                   ),
                 ),
