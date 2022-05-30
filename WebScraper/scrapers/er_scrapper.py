@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from itertools import count, takewhile
 from typing import Final
 from unicodedata import normalize as u_normalize
 from io import StringIO
@@ -155,22 +156,10 @@ def scrape_npc_info(soup: BeautifulSoup, baseUrl: str) -> list:
 
 
 class DumbHtml2Markdown:
-    
-    class _TokenType(Enum):
-        NONE = 0
-        TEXT = 1
-        BOLD = 2
-        PARAGRAPH = 3
-        BLOCKQUOTE = 4
-        UNORD_LIST = 5
-        ORD_LIST = 6
-        HEADING = 7
-
     _buffer: StringIO
     _rootTag: Tag
-    _tokenStack = []
 
-    suported_tags: Final[list] = ['h1', 'h2', 'h3', 'ul', 'ol', 'li', 'em', 'p', 'a', 'strong']
+    suported_tags: Final[list] = ['h1', 'h2', 'h3', 'ul', 'ol', 'li', 'em', 'p', 'a', 'strong', 'br']
 
     def __init__(self, soup: Tag):
         self._buffer = StringIO()
@@ -180,18 +169,15 @@ class DumbHtml2Markdown:
         self.__writeTag(self._rootTag)
         return self._buffer.getvalue()
 
-
-    def __pushToken(self, type: _TokenType):
-        self._tokenStack.append(type)
-
-    def __popToken(self):
-        self._tokenStack.pop()
-
     def __writeText(self, str):
         self._buffer.write(str)
 
     def __writeEndl(self):
         self._buffer.write('\r\n')
+
+    def __writeBreakLine(self):
+        self._buffer.write('\\')
+        self.__writeEndl()
 
     def __writeHighligthed(self, tag: Tag):
         self._buffer.write('`')
@@ -204,37 +190,34 @@ class DumbHtml2Markdown:
         self.__writeEndl()
 
     def __writeParagraph(self, tag: Tag):
+        self.__writeEndl()
         self.__writeTag(tag)
         self.__writeEndl()
 
     def __writeUnordedList(self, tag: Tag, blockQuote = False):
-        self.__pushToken(self._TokenType.UNORD_LIST)
         if blockQuote:
             self.__writeBlockquote(tag)
         else:
             self.__writeTag(tag)
-        self.__popToken()
 
     def __writeOrderedList(self, tag: Tag, blockQuote = False):
-        self.__pushToken(self._TokenType.ORD_LIST)
         if blockQuote:
             self.__writeBlockquote(tag)
         else:
             self.__writeTag(tag)
-        self.__popToken()
 
     def __writeListItem(self, tag: Tag):
-        if len(self._tokenStack) == 0:
+        isList = lambda tag: tag.name == 'ul' or tag.name == 'ol'
+        depth = sum(1 for _ in takewhile(isList, tag.parents)) - 1
+        if depth < 0:
             self.__writeTag(tag)
             return
-        top = self._tokenStack[-1:][0]
-        depth = sum(1 for i in self._tokenStack if i == top) - 1
         if depth > 0:
             self._buffer.write('\t' * depth)
-        match top:
-            case self._TokenType.UNORD_LIST:
+        match tag.parent.name:
+            case 'ul':
                 self._buffer.write('- ')
-            case self._TokenType.ORD_LIST:
+            case 'ol':
                 self._buffer.write('1. ')
         self.__writeTag(tag)
         self.__writeEndl()
@@ -245,7 +228,6 @@ class DumbHtml2Markdown:
         self._buffer.write('*')
 
     def __writeHeading(self, tag: Tag):
-        self.__pushToken(self._TokenType.HEADING)
         self._buffer.write(''.join('#' for i in range(0 ,int(tag.name[1]))))
         self._buffer.write(' ')
         self.__writeTag(tag)
@@ -255,7 +237,6 @@ class DumbHtml2Markdown:
         self._buffer.write('**')
         self.__writeTag(tag)
         self._buffer.write('**')
-    
 
     def __writeTag(self, tag: Tag):
         for item in tag.contents:
@@ -274,6 +255,8 @@ class DumbHtml2Markdown:
                             self.__writeHighligthed(item)
                         case 'em':
                             self.__writeItalic(item)
+                        case 'br':
+                            self.__writeBreakLine()
                         case 'strong':
                             self.__writeBold(item)
                     if item.name[0] == 'h':
